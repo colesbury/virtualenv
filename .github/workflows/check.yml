@@ -26,6 +26,7 @@ jobs:
           - pypy-3.9
           - pypy-3.8
           - pypy-3.7
+          - pypy-3.6
         os:
           - ubuntu-20.04
           - macos-12
@@ -189,7 +190,7 @@ jobs:
       - name: Build sdist and wheel
         run: python -m build -s -w . -o dist
       - name: Publish to PyPi
-        uses: pypa/gh-action-pypi-publish@v1.6.3
+        uses: pypa/gh-action-pypi-publish@v1.6.1
         with:
           skip_existing: true
           user: __token__

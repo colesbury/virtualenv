@@ -20,8 +20,8 @@ source =
     .tox/pypy*/site-packages
     .tox\*\Lib\site-packages
     .tox\py\site-packages
-    **/src
-    **\src
+    */src
+    *\src
 
 [coverage:run]
 branch = false

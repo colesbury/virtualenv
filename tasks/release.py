@@ -38,7 +38,7 @@ def create_release_branch(repo: Repo, version: Version) -> Tuple[Remote, Head]:
 
 
 def get_upstream(repo: Repo) -> Remote:
-    upstream_remote = "pypa/virtualenv.git"
+    upstream_remote = "colesbury/virtualenv.git"
     urls = set()
     for remote in repo.remotes:
         for url in remote.urls:
